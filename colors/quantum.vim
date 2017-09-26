@@ -11,31 +11,16 @@ endif
 set background=dark
 let g:colors_name = 'chito'
 
-let g:quantum_italics = get(g:, 'quantum_italics', 0)
-let g:quantum_black = get(g:, 'quantum_black', 0)
+let g:chito_italics = get(g:, 'chito_italics', 0)
+let g:chito_black = get(g:, 'chito_black', 0)
 
 " Color Palette
-" quantum default pallete
-"let s:gray1     = g:quantum_black ? '#212121' : '#263238'
-"let s:gray2     = g:quantum_black ? '#292929' : '#2c3a41'
-"let s:gray3     = g:quantum_black ? '#474646' : '#425762'
-"let s:gray4     = g:quantum_black ? '#6a6c6c' : '#658494'
-"let s:gray5     = g:quantum_black ? '#b7bdc0' : '#aebbc5'
-let s:red       = '#dd7186'
-"let s:green     = '#87bb7c'
-"let s:yellow    = '#d5b875'
-let s:blue      = '#70ace5'
-let s:purple    = '#a48add'
-let s:cyan      = '#69c5ce'
-let s:orange    = '#d7956e'
-let s:indigo    = '#7681de'
-
-"My custon backgorund pallete
-let s:gray1     = g:quantum_black ? '#212121' : '#2B303C'
-let s:gray2     = g:quantum_black ? '#292929' : '#40444f'
-let s:gray3     = g:quantum_black ? '#474646' : '#555962'
-let s:gray4     = g:quantum_black ? '#6a6c6c' : '#6a6e76'
-let s:gray5     = g:quantum_black ? '#b7bdc0' : '#aaacb1'
+" chito default pallete
+let s:gray1     = g:chito_black ? '#212121' : '#2B303C'
+let s:gray2     = g:chito_black ? '#292929' : '#40444f'
+let s:gray3     = g:chito_black ? '#474646' : '#555962'
+let s:gray4     = g:chito_black ? '#6a6c6c' : '#6a6e76'
+let s:gray5     = g:chito_black ? '#b7bdc0' : '#aaacb1'
 let s:red       = '#dd7186'
 let s:green     = '#85bb65'
 let s:yellow    = '#ffd700'
@@ -47,7 +32,7 @@ let s:indigo    = '#7681de'
 
 function! s:HL(group, fg, bg, attr)
     let l:attr = a:attr
-    if !g:quantum_italics && l:attr ==# 'italic'
+    if !g:chito_italics && l:attr ==# 'italic'
         let l:attr = 'none'
     endif
 
