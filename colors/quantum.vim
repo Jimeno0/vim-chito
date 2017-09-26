@@ -9,7 +9,7 @@ if exists('syntax_on')
 endif
 
 set background=dark
-let g:colors_name = 'quantum'
+let g:colors_name = 'chito'
 
 let g:quantum_italics = get(g:, 'quantum_italics', 0)
 let g:quantum_black = get(g:, 'quantum_black', 0)
